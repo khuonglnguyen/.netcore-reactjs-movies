@@ -4,6 +4,7 @@ import "./App.css";
 import { landingPageDTO, movieDTO } from "./movies/movies.model";
 import MoviesList from "./movies/MoviesList";
 import Button from "./utils/Button";
+import Menu from "./Menu";
 
 function App() {
   const [moveis, setMovies] = useState<landingPageDTO>({});
@@ -42,12 +43,15 @@ function App() {
   });
 
   return (
+    <>
+    <Menu></Menu>
     <div className="container">
       <h3>In Theaters</h3>
       <MoviesList movies={moveis.inTheaters} />
       <h3>Upcoming Releases</h3>
       <MoviesList movies={moveis.upcomingReleases} />
     </div>
+    </>
   );
 }
 
