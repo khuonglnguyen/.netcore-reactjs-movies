@@ -5,6 +5,8 @@ import { landingPageDTO, movieDTO } from "./movies/movies.model";
 import MoviesList from "./movies/MoviesList";
 import Button from "./utils/Button";
 import Menu from "./Menu";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import IndexGeners from "./geners/indexGeners";
 
 function App() {
   const [moveis, setMovies] = useState<landingPageDTO>({});
@@ -44,13 +46,22 @@ function App() {
 
   return (
     <>
-    <Menu></Menu>
-    <div className="container">
-      <h3>In Theaters</h3>
-      <MoviesList movies={moveis.inTheaters} />
-      <h3>Upcoming Releases</h3>
-      <MoviesList movies={moveis.upcomingReleases} />
-    </div>
+      <BrowserRouter>
+        <Menu></Menu>
+        <div className="container">
+          <Switch>
+            <Route exact path="/">
+              <h3>In Theaters</h3>
+              <MoviesList movies={moveis.inTheaters} />
+              <h3>Upcoming Releases</h3>
+              <MoviesList movies={moveis.upcomingReleases} />
+            </Route>
+            <Route exact path="/geners">
+              <IndexGeners></IndexGeners>
+            </Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
     </>
   );
 }
