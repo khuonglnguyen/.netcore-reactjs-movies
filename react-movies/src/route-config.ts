@@ -15,7 +15,7 @@ import IndexMovieTheaters from "./movietheaters/IndexMovieTheaters";
 const routes = [
   { path: "/genres", component: IndexGeners, exact: true },
   { path: "/genres/create", component: CreateGenre},
-  { path: "/genres/edit", component: EditGenre},
+  { path: "/genres/edit/:id(\\d+)", component: EditGenre},
 
   { path: "/actors", component: IndexActors, exact: true },
   { path: "/actors/create", component: CreateActor},
