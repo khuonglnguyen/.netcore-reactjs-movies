@@ -11,24 +11,26 @@ import LandingPage from "./movies/LandingPage";
 import CreateMovieTheater from "./movietheaters/CreateMovieTheater";
 import EditMovieTheater from "./movietheaters/EditMovieTheater";
 import IndexMovieTheaters from "./movietheaters/IndexMovieTheaters";
+import RedirectToLandingPage from "./utils/RedirectToLandingPage";
 
 const routes = [
   { path: "/genres", component: IndexGeners, exact: true },
-  { path: "/genres/create", component: CreateGenre},
-  { path: "/genres/edit/:id(\\d+)", component: EditGenre},
+  { path: "/genres/create", component: CreateGenre },
+  { path: "/genres/edit/:id(\\d+)", component: EditGenre },
 
   { path: "/actors", component: IndexActors, exact: true },
-  { path: "/actors/create", component: CreateActor},
-  { path: "/actors/edit", component: EditActor},
+  { path: "/actors/create", component: CreateActor },
+  { path: "/actors/edit/:id(\\d+)", component: EditActor },
 
   { path: "/movietheaters", component: IndexMovieTheaters, exact: true },
-  { path: "/movietheaters/create", component: CreateMovieTheater},
-  { path: "/movietheaters/edit", component: EditMovieTheater},
+  { path: "/movietheaters/create", component: CreateMovieTheater },
+  { path: "/movietheaters/edit/:id(\\d+)", component: EditMovieTheater },
 
-  { path: "/movies/filter", component: FilterMovies},
-  { path: "/movies/create", component: CreateMovie},
-  { path: "/movies/edit", component: EditMovie},
+  { path: "/movies/filter", component: FilterMovies },
+  { path: "/movies/create", component: CreateMovie },
+  { path: "/movies/edit/:id(\\d+)", component: EditMovie },
 
   { path: "/", component: LandingPage, exact: true },
+  { path: "*", component: RedirectToLandingPage },
 ];
 export default routes;
