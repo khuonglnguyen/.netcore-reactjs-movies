@@ -14,7 +14,9 @@ export default function CreateGenre() {
           name: "",
         }}
         validationSchema={Yup.object({
-          name: Yup.string().required("This field is required"),
+          name: Yup.string()
+            .required("This field is required")
+            .firstLetterUppercase(),
         })}
         onSubmit={(value) => {}}
       >
