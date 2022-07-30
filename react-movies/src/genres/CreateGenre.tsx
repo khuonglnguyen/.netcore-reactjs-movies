@@ -18,16 +18,24 @@ export default function CreateGenre() {
             .required("This field is required")
             .firstLetterUppercase(),
         })}
-        onSubmit={(value) => {}}
+        onSubmit={async (value) => {
+          await new Promise((r) => setTimeout(r, 3000));
+          console.log(value);
+          
+        }}
       >
-        <Form>
-          <TextField field="name" displayName="Name"></TextField>
+        {(formikProps) => (
+          <Form>
+            <TextField field="name" displayName="Name"></TextField>
 
-          <Button type="submit">Save Changes</Button>
-          <Link className="btn btn-secondary" to="/genres">
-            Cancel
-          </Link>
-        </Form>
+            <Button disabled={formikProps.isSubmitting} type="submit">
+              Save Changes
+            </Button>
+            <Link className="btn btn-secondary" to="/genres">
+              Cancel
+            </Link>
+          </Form>
+        )}
       </Formik>
     </>
   );
