@@ -8,6 +8,7 @@ export default function EditActor() {
         model={{
           name: "Johnny Deep",
           dateOfBirth: new Date("1996/03/02"),
+          pictureURL: "https://m.media-amazon.com/images/M/MV5BOTBhMTI1NDQtYmU4Mi00MjYyLTk5MjEtZjllMDkxOWY3ZGRhXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg",
         }}
         onSubmit={(values) => console.log(values)}
       />
