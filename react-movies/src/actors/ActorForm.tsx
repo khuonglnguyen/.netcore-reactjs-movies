@@ -4,6 +4,7 @@ import TextField from "../forms/TextField";
 import Button from "../utils/Button";
 import actorCreationDTO from "./actors.model";
 import * as Yup from "yup";
+import DateField from "../forms/DateField";
 
 export default function ActorForm(props: actorFormProps) {
   return (
@@ -11,12 +12,19 @@ export default function ActorForm(props: actorFormProps) {
       initialValues={props.model}
       onSubmit={props.onSubmit}
       validationSchema={Yup.object({
-        name: Yup.string().required("This field is required").firstLetterUppercase(),
+        name: Yup.string()
+          .required("This field is required")
+          .firstLetterUppercase(),
+        dateOfBirth: Yup.date().nullable().required("This field is required"),
       })}
     >
       {(formikProps) => (
         <Form>
           <TextField displayName="Name" field="name"></TextField>
+          <DateField
+            displayName="Date of Birth"
+            field="dateOfBirth"
+          ></DateField>
           <Button disabled={formikProps.isSubmitting} type="submit">
             Save Changes
           </Button>
