@@ -3,8 +3,8 @@ import L from "leaflet";
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import "leaflet/dist/leaflet.css";
-import coordinateDTO from "./doordinates.model";
 import { useState } from "react";
+import coordinateDTO from "./coordinates.model";
 
 let defaultIcon = L.icon({
   iconUrl: icon,
@@ -15,13 +15,15 @@ let defaultIcon = L.icon({
 L.Marker.prototype.options.icon = defaultIcon;
 
 export default function Map(props: mapProps) {
-  const [coordinates, setCoordinates] = useState<coordinateDTO[]>([]);
+  const [coordinates, setCoordinates] = useState<coordinateDTO[]>(
+    props.coordinates
+  );
 
   return (
     <MapContainer
       center={[10.042880099928833, 105.76653169072291]}
-      zoom={14}
       style={{ height: props.height }}
+      zoom={14}
     >
       <TileLayer
         attribution="React Movies"
@@ -30,6 +32,7 @@ export default function Map(props: mapProps) {
       <MapClick
         setCoordinates={(coordinates) => {
           setCoordinates([coordinates]);
+          props.handleMapClick(coordinates);
         }}
       ></MapClick>
       {coordinates.map((coordinate, index) => {
@@ -45,6 +48,8 @@ export default function Map(props: mapProps) {
 }
 interface mapProps {
   height: string;
+  coordinates: coordinateDTO[];
+  handleMapClick(coordinates: coordinateDTO): void;
 }
 
 Map.defaultProps = {
