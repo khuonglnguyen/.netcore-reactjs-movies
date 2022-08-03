@@ -2,7 +2,7 @@ import { Form, Formik, FormikHelpers } from "formik";
 import { Link } from "react-router-dom";
 import TextField from "../forms/TextField";
 import Button from "../utils/Button";
-import actorCreationDTO from "./actors.model";
+import {actorCreationDTO} from "./actors.model";
 import * as Yup from "yup";
 import DateField from "../forms/DateField";
 import ImageField from "../forms/ImageField";
