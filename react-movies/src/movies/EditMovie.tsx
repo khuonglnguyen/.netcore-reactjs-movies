@@ -1,3 +1,4 @@
+import { actorMovieDTO } from "../actors/actors.model";
 import { genreDTO } from "../genres/genres.model";
 import { movieTheaterDTO } from "../movietheaters/movieTheater.model";
 import MovieForm from "./MovieForm";
@@ -15,6 +16,23 @@ export default function EditMovie() {
     { id: 2, name: "Lotte Hung Vuong" },
   ];
 
+  const selectedActors: actorMovieDTO[] = [
+    {
+      id: 1,
+      name: "Scarlett Johansson",
+      character: "Sac",
+      picture:
+        "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY209_CR16,0,140,209_AL_.jpg",
+    },
+    {
+      id: 2,
+      name: "Elizabeth Olsen",
+      character: "Vdsd",
+      picture:
+        "https://m.media-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY209_CR4,0,140,209_AL_.jpg",
+    }
+  ];
+
   return (
     <>
       <h3>Edit Movie</h3>
@@ -30,7 +48,7 @@ export default function EditMovie() {
         selectedGenres={selectGenres}
         nonSelectedMovieTheaters={nonSelectMovieTheaters}
         selectedMovieTheaters={selectMovieTheaters}
-        selectedActors={[]}
+        selectedActors={selectedActors}
       ></MovieForm>
     </>
   );

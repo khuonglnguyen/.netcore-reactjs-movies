@@ -90,7 +90,15 @@ export default function TypeAheadActors(props: typeAheadActorsProps) {
       ></Typeahead>
       <ul className="list-group">
         {props.actors.map((actor) => (
-          <li key={actor.id} className="list-group-item list-group-item-action">
+          <li key={actor.id} 
+          draggable={true}
+          onDragStart={()=>{
+            handleDragStart(actor)
+          }}
+          onDragOver={()=>{
+            handleDragOver(actor)
+          }}
+          className="list-group-item list-group-item-action">
             {props.listUI(actor)}
             <span
               className="badge badge-primary badge-pill pointer text-dark"
