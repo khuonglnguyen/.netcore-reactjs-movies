@@ -11,6 +11,8 @@ export interface movieCreationDTO {
   realeaseDate?: Date;
   poster?: File;
   posterURL?: string;
+  gernresIds?: number[];
+  movieTheatersIds?: number[];
 }
 
 export interface landingPageDTO {

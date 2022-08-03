@@ -1,4 +1,4 @@
-import './multipleSelector.css'
+import './MultipleSelector.css'
 
 export default function MultipleSelector(props: multipleSelectorProps) {
   function select(item: multipleSelectorModel) {
