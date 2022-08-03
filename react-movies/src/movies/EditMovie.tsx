@@ -6,7 +6,7 @@ export default function EditMovie() {
   const nonSelectGenres: genreDTO[] = [{ id: 2, name: "Horror" }];
 
   const selectGenres: genreDTO[] = [{ id: 1, name: "Action" }];
-  
+
   const nonSelectMovieTheaters: movieTheaterDTO[] = [
     { id: 1, name: "Lotte Mau Than" },
   ];
@@ -29,7 +29,8 @@ export default function EditMovie() {
         nonSelectedGenres={nonSelectGenres}
         selectedGenres={selectGenres}
         nonSelectedMovieTheaters={nonSelectMovieTheaters}
-        selectedMovieTheaters={selectMovieTheaters} 
+        selectedMovieTheaters={selectMovieTheaters}
+        selectedActors={[]}
       ></MovieForm>
     </>
   );

@@ -23,6 +23,7 @@ export default function CreateMovie() {
         selectedGenres={[]} 
         nonSelectedMovieTheaters={nonSelectMovieTheaters}
         selectedMovieTheaters={[]} 
+        selectedActors={[]}
       ></MovieForm>
     </>
   );
