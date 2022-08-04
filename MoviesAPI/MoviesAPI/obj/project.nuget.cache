@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "6rBn60ImBFPmzS7PUCnWpQwplA5dWbS+4wpCl7s2toy0WHIp6Yu4io2Kp6to0GmnZMzvoiRGlewd80pTa6JhVg==",
+  "dgSpecHash": "YHnrT08siSCCY2TYJo/4EmMJ29y21Bnua/cOjpK9WUDSxaaU8kWdfUa1a4vApZs99fTUlqHrngoW7e1bwk+DIw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\ASP.NET Core - ReactJS\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.7\\microsoft.aspnetcore.authentication.jwtbearer.6.0.7.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.7\\microsoft.aspnetcore.authentication.openidconnect.6.0.7.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\Khuong Nguyen\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
