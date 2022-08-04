@@ -1,0 +1,70 @@
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.exe
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.deps.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.runtimeconfig.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.pdb
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.AssemblyReference.cache
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.AssemblyInfoInputs.cache
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.AssemblyInfo.cs
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.CoreCompileInputs.cache
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\scopedcss\bundle\MoviesAPI.styles.css
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.CopyComplete
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\refint\MoviesAPI.dll
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.pdb
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.genruntimeconfig.cache
+C:\Users\Khuong Nguyen\Desktop\tmp\React-and-ASP.NET-Core\React 17 and ASP.NET Core 6\Module 7 - ASP.NET Core Fundamentals\End\MoviesAPI\MoviesAPI\obj\Debug\net6.0\ref\MoviesAPI.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\appsettings.Development.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\appsettings.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.exe
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.deps.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.runtimeconfig.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.pdb
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.AssemblyReference.cache
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.AssemblyInfoInputs.cache
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.AssemblyInfo.cs
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.CoreCompileInputs.cache
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets.build.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\staticwebassets.development.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\scopedcss\bundle\MoviesAPI.styles.css
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.csproj.CopyComplete
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\refint\MoviesAPI.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.pdb
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\MoviesAPI.genruntimeconfig.cache
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\ref\MoviesAPI.dll
