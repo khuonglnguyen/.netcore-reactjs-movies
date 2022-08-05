@@ -1,104 +1,97 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
-export default function Pagnation(props: paginationProps) {
-  const [linkModels, setLinkModels] = useState<linkModel[]>([]);
+export default function Pagination(props: paginationProps){
 
-  function selectPage(link: linkModel) {
-    if (link.page === props.currentPage) {
-      return;
+    const [linkModels, setLinkModels] = useState<linkModel[]>([]);
+
+    function selectPage(link: linkModel){
+        if (link.page === props.currentPage){
+            return;
+        }
+
+        if (!link.enabled){
+            return;
+        }
+
+        props.onChange(link.page);
     }
 
-    if (!link.enable) {
-      return;
+    function getClass(link: linkModel){
+        if (link.active){
+            return "active pointer";
+        }
+
+        if (!link.enabled){
+            return "disabled";
+        }
+
+        return "pointer";
     }
 
-    props.onChange(link.page);
-  }
+    useEffect(() => {
+        const previousPageEnabled = props.currentPage !== 1;
+        const previousPage = props.currentPage - 1;
+        const links: linkModel[] = [];
 
-  function getClass(link: linkModel) {
-    if (link.active) {
-      return "active pointer";
-    }
-
-    if (!link.enable) {
-      return "disable";
-    }
-
-    return "pointer";
-  }
-
-  useEffect(() => {
-    const previousPageEnable = props.currentPage !== 1;
-    const previousPage = props.currentPage - 1;
-    const links: linkModel[] = [];
-
-    links.push({
-      text: "Previous",
-      enable: previousPageEnable,
-      page: previousPage,
-      active: false,
-    });
-
-    for (let i = 0; i < props.totalAmountOfPages; i++) {
-      if (
-        i >= props.currentPage - props.radio &&
-        i <= props.currentPage + props.radio
-      ) {
         links.push({
-          text: `${i}`,
-          enable: true,
-          page: i,
-          active: props.currentPage === 1,
+            text: 'Previous',
+            enabled: previousPageEnabled,
+            page: previousPage,
+            active: false
         });
-      }
-    }
 
-    const nextPageEnable =
-      props.currentPage !== props.totalAmountOfPages &&
-      props.totalAmountOfPages > 0;
-    const nextPage = props.currentPage + 1;
+        for (let i = 1; i <= props.totalAmountOfPages; i++){
+            if (i >= props.currentPage - props.radio && i <= props.currentPage + props.radio){
+                links.push({
+                    text: `${i}`,
+                    active: props.currentPage === i,
+                    enabled: true, 
+                    page: i
+                })
+            }
+        }
 
-    links.push({
-      text: "Next",
-      enable: nextPageEnable,
-      page: nextPage,
-      active: false,
-    });
+        const nextPageEnabled = props.currentPage !== props.totalAmountOfPages &&
+            props.totalAmountOfPages > 0;
+        const nextPage = props.currentPage + 1;
 
-    setLinkModels(links);
-  }, [props.currentPage, props.totalAmountOfPages, props.radio]);
+        links.push({
+            text: 'Next',
+            page: nextPage,
+            enabled: nextPageEnabled,
+            active: false
+        })
 
-  return (
-    <nav>
-      <ul className="pagination justify-content-center">
-        {linkModels.map((link) => {
-          return (
-            <li
-              key={link.text}
-              onClick={() => {
-                selectPage(link);
-              }}
-              className={`page-item cursor ${getClass(link)}`}
+        setLinkModels(links);
+    }, [props.currentPage, props.totalAmountOfPages, props.radio])
+
+    return <nav>
+        <ul className="pagination justify-content-center">
+            {linkModels.map(link => <li key={link.text}
+             onClick={() => selectPage(link)} 
+             className={`page-item cursor ${getClass(link)}`}
             >
-              <span className="page-link">{link.text}</span>
-            </li>
-          );
-        })}
-      </ul>
+                <span className="page-link">{link.text}</span>
+            </li>)}
+        </ul>
+
     </nav>
-  );
 }
 
 interface linkModel {
-  page: number;
-  enable: boolean;
-  text: string;
-  active: boolean;
+    page: number;
+    enabled: boolean;
+    text: string;
+    active: boolean;
 }
 
 interface paginationProps {
-  currentPage: number;
-  totalAmountOfPages: number;
-  radio: number;
-  onChange(page: number): void;
+    currentPage: number;
+    totalAmountOfPages: number;
+    radio: number;
+    onChange(page: number): void;
+}
+
+Pagination.defaultProps = {
+    radio: 3
 }

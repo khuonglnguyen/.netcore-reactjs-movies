@@ -3,16 +3,31 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { urlGenres } from "../endpoints";
 import GenericList from "../utils/GenericList";
+import Pagination from "../utils/Pagnation";
+import RecordsPerPageSelect from "../utils/RecordsPerPageSelect";
 import { genreDTO } from "./genres.model";
 
 export default function IndexGeners() {
   const [genres, setGenres] = useState<genreDTO[]>();
+  const [totalAmountOfPages, setTotalAmountOfPages] = useState(0);
+  const [recordsPerPage, setRecordsPerPage] = useState(5);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
-    axios.get(urlGenres).then((response: AxiosResponse<genreDTO[]>) => {
-      setGenres(response.data);
-    });
-  }, []);
+    axios
+      .get(urlGenres, {
+        params: { page, recordsPerPage },
+      })
+      .then((response: AxiosResponse<genreDTO[]>) => {
+        const totalAmountOfRecords = parseInt(
+          response.headers["totalamountofrecords"],
+          10
+        );
+        setTotalAmountOfPages(Math.ceil(totalAmountOfRecords / recordsPerPage));
+
+        setGenres(response.data);
+      });
+  }, [page, recordsPerPage]);
 
   return (
     <>
@@ -20,11 +35,24 @@ export default function IndexGeners() {
       <Link to="/genres/create" className="btn btn-primary">
         Create genre
       </Link>
+      <RecordsPerPageSelect
+        onChange={(amountOfRecords) => {
+          setPage(1);
+          setRecordsPerPage(amountOfRecords);
+        }}
+      ></RecordsPerPageSelect>
+      <Pagination
+        currentPage={page}
+        totalAmountOfPages={totalAmountOfPages}
+        onChange={(newPage) => setPage(newPage)}
+      ></Pagination>
       <GenericList list={genres}>
         <table className="table table-striped">
           <thead>
-            <th></th>
-            <th>Name</th>
+            <tr>
+              <th></th>
+              <th>Name</th>
+            </tr>
           </thead>
           <tbody>
             {genres?.map((genre) => (
