@@ -59,7 +59,7 @@ export default function IndexGeners() {
               <tr key={genre.id}>
                 <td>{genre.name}</td>
                 <td>
-                  <Link className="btn btn-success" to={`/genres/${genre.id}`}>
+                  <Link className="btn btn-success" to={`/genres/edit/${genre.id}`}>
                     Edit
                   </Link>
                 </td>
