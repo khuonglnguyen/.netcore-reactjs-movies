@@ -105,3 +105,7 @@ D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsof
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.Memory.Data.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.staticwebassets.runtime.json
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
