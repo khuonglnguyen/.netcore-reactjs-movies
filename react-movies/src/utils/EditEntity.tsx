@@ -1,5 +1,5 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactElement } from "react-markdown/lib/react-markdown";
 import { useHistory, useParams } from "react-router-dom";
 import DisplayError from "./DisplayError";
@@ -21,7 +21,18 @@ export default function EditEntity<TCreation, TRead>(
 
   async function edit(entityToEdit: TCreation) {
     try {
-      await axios.put(`${props.url}/${id}`, entityToEdit);
+      if (props.transformFormData) {
+        const formData = props.transformFormData(entityToEdit);
+        await axios({
+          method: "put",
+          url: `${props.url}/${id}`,
+          data: formData,
+          headers: { "Content-Type": "multipart/form-data" },
+        });
+      } else {
+        await axios.put(`${props.url}/${id}`, entityToEdit);
+      }
+
       history.push(props.indexURL);
     } catch (error) {
       const err = error as AxiosError;
@@ -45,7 +56,8 @@ interface editEntityProps<TCreation, TRead> {
   transform(entity: TRead): TCreation;
   entityName: string;
   children(entity: TCreation, edit: (entity: TCreation) => void): ReactElement;
-  indexURL:string
+  indexURL: string;
+  transformFormData?(model: TCreation): FormData;
 }
 
 EditEntity.defaultProps = {
