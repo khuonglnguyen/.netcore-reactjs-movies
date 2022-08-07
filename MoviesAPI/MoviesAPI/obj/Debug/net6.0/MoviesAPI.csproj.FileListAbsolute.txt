@@ -104,3 +104,4 @@ D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Azure.St
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\MoviesAPI.staticwebassets.runtime.json

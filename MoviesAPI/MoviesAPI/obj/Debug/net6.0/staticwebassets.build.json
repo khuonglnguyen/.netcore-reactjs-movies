@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "RGOnVuaUuhzxy+DBbGSsQRVU71P5/wPQJlSJhlhFJ8A=",
+  "Hash": "+7Wkl5Rq2Y1sUEBJi8bmVeWlANcuQlc2K3oT1LRNg4A=",
   "Source": "MoviesAPI",
   "BasePath": "_content/MoviesAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MoviesAPI\\wwwroot",
+      "Source": "MoviesAPI",
+      "ContentRoot": "D:\\Projects\\ASP.NET Core - ReactJS\\MoviesAPI\\MoviesAPI\\wwwroot\\",
+      "BasePath": "_content/MoviesAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
