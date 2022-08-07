@@ -98,3 +98,9 @@ D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsof
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\AutoMapper.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Azure.Core.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\System.Memory.Data.dll
