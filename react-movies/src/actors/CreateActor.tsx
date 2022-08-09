@@ -1,7 +1,7 @@
 import axios, { AxiosError } from "axios";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { urlACtors } from "../endpoints";
+import { urlActors } from "../endpoints";
 import DisplayError from "../utils/DisplayError";
 import { convertActorToFormData } from "../utils/formDataUtils";
 import ActorForm from "./ActorForm";
@@ -17,7 +17,7 @@ export default function CreateActor() {
 
       axios({
         method: "post",
-        url: urlACtors,
+        url: urlActors,
         data: formData,
         headers: { "Content-Type": "multipart/form-data" },
       });

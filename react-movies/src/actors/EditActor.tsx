@@ -1,4 +1,4 @@
-import { urlACtors } from "../endpoints";
+import { urlActors } from "../endpoints";
 import EditEntity from "../utils/EditEntity";
 import { convertActorToFormData } from "../utils/formDataUtils";
 import ActorForm from "./ActorForm";
@@ -16,7 +16,7 @@ export default function EditActor() {
 
   return (
     <EditEntity<actorCreationDTO, actorDTO>
-      url={urlACtors}
+      url={urlActors}
       indexURL="/actors"
       entityName="Actor"
       transformFormData={convertActorToFormData}

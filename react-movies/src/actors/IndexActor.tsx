@@ -1,11 +1,11 @@
-import { urlACtors } from "../endpoints";
+import { urlActors } from "../endpoints";
 import IndexEntity from "../utils/IndexEntity";
 import { actorDTO } from "./actors.model";
 
 export default function IndexActors() {
   return (
     <IndexEntity<actorDTO>
-      url={urlACtors}
+      url={urlActors}
       createURL="actors/create"
       title="Actors"
       entityName="Actor"

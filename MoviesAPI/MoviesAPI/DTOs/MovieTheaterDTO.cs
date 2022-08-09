@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double Latidute { get; set; }
-        public double Longidute { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
     }
 }

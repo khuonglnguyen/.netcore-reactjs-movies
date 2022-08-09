@@ -41,7 +41,7 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromForm] MovieTheaterCreationDTO movieTheaterCreationDTO)
+        public async Task<ActionResult> Post(MovieTheaterCreationDTO movieTheaterCreationDTO)
         {
             var movieTheater = mapper.Map<MovieTheater>(movieTheaterCreationDTO);
             context.Add(movieTheater);
@@ -50,7 +50,7 @@ namespace MoviesAPI.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put(int id, [FromForm] MovieTheaterCreationDTO movieTheaterCreationDTO)
+        public async Task<ActionResult> Put(int id, MovieTheaterCreationDTO movieTheaterCreationDTO)
         {
             var movieTheater = await context.MovieTheaters.FirstOrDefaultAsync(x => x.Id == id);
             if (movieTheater == null)
