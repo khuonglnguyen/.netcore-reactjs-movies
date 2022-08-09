@@ -109,3 +109,4 @@ D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsof
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
