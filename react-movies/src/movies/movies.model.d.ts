@@ -30,7 +30,7 @@ export interface movieCreationDTO {
 
 export interface landingPageDTO {
   inTheaters?: movieDTO[];
-  upcomingReleases?: movieDTO[];
+  upcommingReleases?: movieDTO[];
 }
 
 export interface moviesPostGetDTO {
