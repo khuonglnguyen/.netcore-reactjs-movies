@@ -10,7 +10,7 @@ export default function MapField(props: mapFieldProps) {
     values[props.lngField] = coordinates.lng;
   }
   return (
-    <Map coordinates={props.coordinates} handleMapClick={hanldeMapClick}></Map>
+    <Map coordinates={props.coordinates} handleMapClick={hanldeMapClick} readOnly={false}></Map>
   );
 }
 
