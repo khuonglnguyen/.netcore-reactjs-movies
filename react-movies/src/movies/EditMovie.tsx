@@ -1,55 +1,73 @@
-import { actorMovieDTO } from "../actors/actors.model";
-import { genreDTO } from "../genres/genres.model";
-import { movieTheaterDTO } from "../movietheaters/movieTheater.model";
+import axios, { AxiosError, AxiosResponse } from "axios";
+import { useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
+import { urlMovies } from "../endpoints";
+import DisplayError from "../utils/DisplayError";
+import { convertMovieToFormData } from "../utils/formDataUtils";
+import Loading from "../utils/Loading";
 import MovieForm from "./MovieForm";
+import { movieCreationDTO, moviePutGetDTO } from "./movies.model";
 
 export default function EditMovie() {
-  const nonSelectGenres: genreDTO[] = [{ id: 2, name: "Horror" }];
+  const { id }: any = useParams();
+  const [movie, setMovie] = useState<movieCreationDTO>();
+  const [moviePutGet, setMoviePutGet] = useState<moviePutGetDTO>();
+  const history = useHistory();
+  const [errors, setErrors] = useState<string[]>([]);
 
-  const selectGenres: genreDTO[] = [{ id: 1, name: "Action" }];
+  useEffect(() => {
+    axios
+      .get(`${urlMovies}/PutGet/${id}`)
+      .then((response: AxiosResponse<moviePutGetDTO>) => {
+        const model: movieCreationDTO = {
+          title: response.data.movie.title,
+          inTheaters: response.data.movie.inTheaters,
+          trailer: response.data.movie.trailer,
+          posterURL: response.data.movie.poster,
+          summary: response.data.movie.summary,
+          releaseDate: new Date(response.data.movie.releaseDate),
+        };
 
-  const nonSelectMovieTheaters: movieTheaterDTO[] = [
-    { id: 1, name: "Lotte Mau Than" },
-  ];
+        setMovie(model);
+        setMoviePutGet(response.data);
+      });
+  }, [id]);
 
-  const selectMovieTheaters: movieTheaterDTO[] = [
-    { id: 2, name: "Lotte Hung Vuong" },
-  ];
-
-  const selectedActors: actorMovieDTO[] = [
-    {
-      id: 1,
-      name: "Scarlett Johansson",
-      character: "Sac",
-      picture:
-        "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY209_CR16,0,140,209_AL_.jpg",
-    },
-    {
-      id: 2,
-      name: "Elizabeth Olsen",
-      character: "Vdsd",
-      picture:
-        "https://m.media-amazon.com/images/M/MV5BMjEzMjA0ODk1OF5BMl5BanBnXkFtZTcwMTA4ODM3OQ@@._V1_UY209_CR4,0,140,209_AL_.jpg",
+  async function edit(movieToEdit: movieCreationDTO) {
+    try {
+      const formData = convertMovieToFormData(movieToEdit);
+      await axios({
+        method: "put",
+        url: `${urlMovies}/${id}`,
+        data: formData,
+        headers: { "Content-Type": "multipart/form-data" },
+      });
+      history.push(`/movie/${id}`);
+    } catch (error) {
+      const err = error as AxiosError;
+      if (err.response) {
+        setErrors(err.response.data);
+      }
     }
-  ];
+  }
 
   return (
     <>
       <h3>Edit Movie</h3>
-      <MovieForm
-        model={{
-          title: "John Wick",
-          inTheaters: true,
-          trailer: "url",
-          releaseDate: new Date("2019-01-01"),
-        }}
-        onSubmit={(values) => console.log(values)}
-        nonSelectedGenres={nonSelectGenres}
-        selectedGenres={selectGenres}
-        nonSelectedMovieTheaters={nonSelectMovieTheaters}
-        selectedMovieTheaters={selectMovieTheaters}
-        selectedActors={selectedActors}
-      ></MovieForm>
+      <DisplayError errors={errors}></DisplayError>
+      {movie && moviePutGet ? (
+        <MovieForm
+          model={movie}
+          onSubmit={async (values) => await edit(values)}
+          nonSelectedGenres={moviePutGet.nonSelectedGenres}
+          selectedGenres={moviePutGet.selectedGenres}
+          nonSelectedMovieTheaters={moviePutGet.nonSelectedMovieTheaters}
+          selectedMovieTheaters={moviePutGet.selectedMovieTheaters}
+          selectedActors={moviePutGet.actors}
+        ></MovieForm>
+      ) : (
+        <Loading></Loading>
+      )}
     </>
   );
 }
