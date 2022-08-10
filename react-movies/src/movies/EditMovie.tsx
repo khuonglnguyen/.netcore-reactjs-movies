@@ -41,7 +41,7 @@ export default function EditMovie() {
           title: "John Wick",
           inTheaters: true,
           trailer: "url",
-          realeaseDate: new Date("2019-01-01"),
+          releaseDate: new Date("2019-01-01"),
         }}
         onSubmit={(values) => console.log(values)}
         nonSelectedGenres={nonSelectGenres}
