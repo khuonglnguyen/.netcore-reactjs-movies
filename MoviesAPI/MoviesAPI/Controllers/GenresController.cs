@@ -40,6 +40,14 @@ namespace MoviesAPI.Controllers
             return mapper.Map<List<GenreDTO>>(genres);
         }
 
+        [HttpGet("all")]
+        public async Task<ActionResult<List<GenreDTO>>> Get()
+        {
+            var genres = await context.Genres.OrderBy(x => x.Name).ToListAsync();
+
+            return mapper.Map<List<GenreDTO>>(genres);
+        }
+
         [HttpGet("{Id:int}", Name = "getGenre")] // api/genres/example
         public async Task<ActionResult<GenreDTO>> Get(int Id)
         {

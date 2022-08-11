@@ -173,7 +173,7 @@ namespace MoviesAPI.Controllers
             return NoContent();
         }
 
-        [HttpGet]
+        [HttpGet("filter")]
         public async Task<ActionResult<List<MovieDTO>>> Filter([FromQuery] FilterMovieDTO filterMovieDTO)
         {
             var moviesQueryable = context.Movies.AsQueryable();
@@ -198,7 +198,7 @@ namespace MoviesAPI.Controllers
             {
                 moviesQueryable = moviesQueryable
                     .Where(x => x.MoviesGenres.Select(y => y.GenreId)
-                    .Contains(filterMovieDTO.GenreId);
+                    .Contains(filterMovieDTO.GenreId));
             }
 
             await HttpContext.InsertParametersPaginationInHeader(moviesQueryable);
