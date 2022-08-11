@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MoviesAPI.DTOs;
 using MoviesAPI.Entities;
+using MoviesAPI.Filters;
 using MoviesAPI.Helpers;
 using System;
 using System.Collections.Generic;
@@ -78,7 +79,7 @@ namespace MoviesAPI.Controllers
             response.SelectedGenres = movie.Genres;
             response.NonSelectedGenres = nonSelectedGenresDTOs;
             response.SelectedMovieTheaters = movie.MovieTheaters;
-            response.NonSelectedMovieTheaters=nonSelectedMovieTheatersDTOs;
+            response.NonSelectedMovieTheaters = nonSelectedMovieTheatersDTOs;
             response.Actors = movie.Actors;
             return response;
         }
@@ -92,14 +93,14 @@ namespace MoviesAPI.Controllers
                 .Include(x => x.MovieTheatersMovies)
                 .FirstOrDefaultAsync(x => x.Id == id);
 
-            if (movie==null)
+            if (movie == null)
             {
                 return NotFound();
             }
 
-            movie=mapper.Map(movieCreationDTO,movie);
+            movie = mapper.Map(movieCreationDTO, movie);
 
-            if (movieCreationDTO.Poster!=null)
+            if (movieCreationDTO.Poster != null)
             {
                 movie.Poster = await fileStorageService.EditFile(container, movieCreationDTO.Poster, movie.Poster);
             }
@@ -161,7 +162,7 @@ namespace MoviesAPI.Controllers
         public async Task<ActionResult> Delete(int id)
         {
             var movie = await context.Movies.FirstOrDefaultAsync(x => x.Id == id);
-            if (movie==null)
+            if (movie == null)
             {
                 return NotFound();
             }
@@ -170,6 +171,39 @@ namespace MoviesAPI.Controllers
             await context.SaveChangesAsync();
             await fileStorageService.DeleteFile(movie.Poster, container);
             return NoContent();
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<List<MovieDTO>>> Filter([FromQuery] FilterMovieDTO filterMovieDTO)
+        {
+            var moviesQueryable = context.Movies.AsQueryable();
+
+            if (!string.IsNullOrEmpty(filterMovieDTO.Title))
+            {
+                moviesQueryable = moviesQueryable.Where(x => x.Title.Contains(filterMovieDTO.Title));
+            }
+
+            if (filterMovieDTO.InTheaters)
+            {
+                moviesQueryable = moviesQueryable.Where(x => x.InTheaters);
+            }
+
+            if (filterMovieDTO.UpcommingReleases)
+            {
+                var today = DateTime.Now;
+                moviesQueryable = moviesQueryable.Where(x => x.ReleaseDate > today);
+            }
+
+            if (filterMovieDTO.GenreId != 0)
+            {
+                moviesQueryable = moviesQueryable
+                    .Where(x => x.MoviesGenres.Select(y => y.GenreId)
+                    .Contains(filterMovieDTO.GenreId);
+            }
+
+            await HttpContext.InsertParametersPaginationInHeader(moviesQueryable);
+            var movies = await moviesQueryable.OrderBy(x => x.Title).Paginate(filterMovieDTO.PaginationDTO).ToListAsync();
+            return mapper.Map<List<MovieDTO>>(movies);
         }
 
         private void AnnotateActorsOrder(Movie movie)
