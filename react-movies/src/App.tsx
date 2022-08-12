@@ -14,8 +14,20 @@ function App() {
     {
       name: "email",
       value: "lapankhuongnguyen@gmail.com",
-    }
+    },
+    // {
+    //   name: "role",
+    //   value: "admin",
+    // },
   ]);
+
+  function isAdmin() {
+    return (
+      claims.findIndex(
+        (claim) => claim.name === "role" && claim.value === "admin"
+      ) > -1
+    );
+  }
 
   return (
     <>
@@ -27,7 +39,11 @@ function App() {
               {routes.map((route) => {
                 return (
                   <Route key={route.path} path={route.path} exact={route.exact}>
-                    <route.component></route.component>
+                    {route.isAdmin && !isAdmin() ? (
+                      <>You are not allowed to see this page</>
+                    ) : (
+                      <route.component></route.component>
+                    )}
                   </Route>
                 );
               })}
