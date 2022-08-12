@@ -25,7 +25,7 @@ export default function LandingPage() {
         loadDate();
       }}
     >
-      <Authorized authorized={<>You are authorized</>} notAuthorized={<>You are not authorized</>}></Authorized>
+      <Authorized authorized={<>You are authorized</>} notAuthorized={<>You are not authorized</>} ></Authorized>
       <h3>In Theaters</h3>
       <MoviesList movies={moveis.inTheaters} />
       <h3>Upcoming Releases</h3>

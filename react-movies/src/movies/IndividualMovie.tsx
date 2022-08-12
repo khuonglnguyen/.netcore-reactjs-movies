@@ -7,6 +7,7 @@ import Button from "../utils/Button";
 import customConfirm from "../utils/customConfirm";
 import { useContext } from "react";
 import AlertContext from "../utils/AlertContext";
+import Authorized from "../auth/Authorized";
 
 export default function IndividualMovie(props: movieDTO) {
   const buildLink = () => {
@@ -28,7 +29,8 @@ export default function IndividualMovie(props: movieDTO) {
       <p>
         <Link to={buildLink()}>{props.title}</Link>
       </p>
-      <div>
+      <Authorized role="admin" authorized={<>
+        <div>
         <Link
           style={{ marginRight: "1rem" }}
           className="btn btn-info"
@@ -45,6 +47,8 @@ export default function IndividualMovie(props: movieDTO) {
           Delete
         </Button>
       </div>
+      </>}></Authorized>
+     
     </div>
   );
 }
