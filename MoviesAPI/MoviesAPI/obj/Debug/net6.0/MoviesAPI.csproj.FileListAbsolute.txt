@@ -110,3 +110,8 @@ D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopol
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\NetTopologySuite.IO.SqlServerBytes.dll
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Debug\net6.0\EFCoreSqlServerNetTopologySuite.cs
 D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

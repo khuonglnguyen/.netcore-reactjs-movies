@@ -53,31 +53,35 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.7, )",
+              "version": "[6.0.8, )",
               "noWarn": [
                 "NU1605"
               ]
             },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[6.0.7, )",
+              "version": "[6.0.8, )",
               "noWarn": [
                 "NU1605"
               ]
             },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.8, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
