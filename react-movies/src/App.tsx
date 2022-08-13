@@ -11,10 +11,10 @@ configureValidation();
 
 function App() {
   const [claims, setClaims] = useState<claim[]>([
-    {
-      name: "email",
-      value: "lapankhuongnguyen@gmail.com",
-    },
+    // {
+    //   name: "email",
+    //   value: "lapankhuongnguyen@gmail.com",
+    // },
     // {
     //   name: "role",
     //   value: "admin",
