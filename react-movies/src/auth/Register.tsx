@@ -6,7 +6,7 @@ import DisplayError from "../utils/DisplayError";
 import { authenticationResponse, userCredentials } from "./auth.models";
 import AuthenticationContext from "./AuthenticationContext";
 import AuthForm from "./AuthForm";
-import saveToken, { getClaims } from "./handleJWT";
+import { saveToken,getClaims } from "./handleJWT";
 
 export default function Register() {
   const [errors, setErrors] = useState<string[]>([]);

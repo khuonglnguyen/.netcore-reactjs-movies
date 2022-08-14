@@ -6,7 +6,7 @@ import DisplayError from "../utils/DisplayError";
 import { authenticationResponse, userCredentials } from "./auth.models";
 import AuthenticationContext from "./AuthenticationContext";
 import AuthForm from "./AuthForm";
-import saveToken, { getClaims } from "./handleJWT";
+import { getClaims, saveToken } from "./handleJWT";
 
 export default function Login() {
   const [errors, setErrors] = useState<string[]>([]);
@@ -19,7 +19,7 @@ export default function Login() {
       const response = await axios.post<authenticationResponse>(
         `${urlAccounts}/login`,
         credentials
-      );
+      );      
       saveToken(response.data);
       update(getClaims());
       history.push('/')

@@ -63,7 +63,8 @@ namespace MoviesAPI.Controllers
         {
             var claims = new List<Claim>()
             {
-                new Claim("email",userCredentials.Email)
+                new Claim("email",userCredentials.Email),
+                new Claim("role","admin")
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["keyjwt"]));

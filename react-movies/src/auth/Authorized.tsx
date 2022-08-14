@@ -8,7 +8,7 @@ export default function Authorized(props: authorizedProps) {
   useEffect(() => {
     if (props.role) {
       const index = claims.findIndex(
-        (claim) => claim.name === "value" && claim.value === props.role
+        (claim) => claim.name === "role" && claim.value === props.role
       );
       setIsAuthorized(index > -1);
     } else {
