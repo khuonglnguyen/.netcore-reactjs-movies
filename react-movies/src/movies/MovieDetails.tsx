@@ -75,7 +75,8 @@ export default function MovieDetails() {
           {genre.name}
         </Link>
       ))}
-      | {movie.releaseDate.toDateString()} | Your vote: <Ratings maximumValue={5} selectedValue={0} onChange={handleRate}></Ratings>
+      | {movie.releaseDate.toDateString()} | Your vote: <Ratings maximumValue={5} selectedValue={movie.averageVote} onChange={handleRate}></Ratings>
+      | Average Vote: {movie.averageVote}
       <div style={{ display: "flex", marginTop: "1rem" }}>
         <span style={{ display: "inline-block", marginRight: "1rem" }}>
           <img
