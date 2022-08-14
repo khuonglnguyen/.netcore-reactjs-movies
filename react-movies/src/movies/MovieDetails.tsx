@@ -6,6 +6,7 @@ import { urlMovies } from "../endpoints";
 import coordinateDTO from "../utils/coordinates.model";
 import Loading from "../utils/Loading";
 import Map from "../utils/Map";
+import Ratings from "../utils/Ratins";
 import { movieDTO } from "./movies.model";
 
 export default function MovieDetails() {
@@ -65,8 +66,8 @@ export default function MovieDetails() {
         >
           {genre.name}
         </Link>
-      ))}{" "}
-      | {movie.releaseDate.toDateString()}
+      ))}
+      | {movie.releaseDate.toDateString()} | Your vote: <Ratings maximumValue={5} selectedValue={0} onChange={() => {}}></Ratings>
       <div style={{ display: "flex", marginTop: "1rem" }}>
         <span style={{ display: "inline-block", marginRight: "1rem" }}>
           <img
@@ -126,8 +127,8 @@ export default function MovieDetails() {
       ) : null}
       {movie.movieTheaters && movie.movieTheaters.length > 0 ? (
         <div>
-            <h2>Showing on</h2>
-            <Map coordinates={transformCoordinates()} readOnly={true}></Map>
+          <h2>Showing on</h2>
+          <Map coordinates={transformCoordinates()} readOnly={true}></Map>
         </div>
       ) : null}
     </div>
