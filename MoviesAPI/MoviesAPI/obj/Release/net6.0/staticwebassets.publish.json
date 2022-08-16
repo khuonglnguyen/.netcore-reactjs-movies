@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "DLsHgJZ5nUvYWT0D+0eMPwX7y3UNTXrDelOvzZF03oI=",
+  "Source": "MoviesAPI",
+  "BasePath": "_content/MoviesAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MoviesAPI\\wwwroot",
+      "Source": "MoviesAPI",
+      "ContentRoot": "D:\\Projects\\ASP.NET Core - ReactJS\\MoviesAPI\\MoviesAPI\\wwwroot\\",
+      "BasePath": "_content/MoviesAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Projects\\ASP.NET Core - ReactJS\\MoviesAPI\\MoviesAPI\\wwwroot\\actors\\7647ac38-ca1a-4e3e-b44d-d2bc27dd17e8.jpeg",
+      "SourceId": "MoviesAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\ASP.NET Core - ReactJS\\MoviesAPI\\MoviesAPI\\wwwroot\\",
+      "BasePath": "_content/MoviesAPI",
+      "RelativePath": "actors/7647ac38-ca1a-4e3e-b44d-d2bc27dd17e8.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actors\\7647ac38-ca1a-4e3e-b44d-d2bc27dd17e8.jpeg"
+    }
+  ]
+}

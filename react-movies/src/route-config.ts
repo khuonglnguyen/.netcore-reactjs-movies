@@ -1,6 +1,7 @@
 import CreateActor from "./actors/CreateActor";
 import EditActor from "./actors/EditActor";
 import IndexActors from "./actors/IndexActor";
+import IndexUsers from "./auth/IndexUsers";
 import Login from "./auth/Login";
 import Register from "./auth/Register";
 import CreateGenre from "./genres/CreateGenre";
@@ -49,6 +50,8 @@ const routes = [
 
   { path: "/register", component: Register },
   { path: "/login", component: Login },
+  
+  { path: "/users", component: IndexUsers, isAdmin: true },
 
   { path: "/", component: LandingPage, exact: true },
   { path: "*", component: RedirectToLandingPage },

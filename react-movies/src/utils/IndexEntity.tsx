@@ -26,6 +26,7 @@ export default function IndexEntity<T>(props: indexEntityProps<T>) {
         params: { page, recordsPerPage },
       })
       .then((response: AxiosResponse<T[]>) => {
+        
         const totalAmountOfRecords = parseInt(
           response.headers["totalamountofrecords"],
           10
@@ -67,9 +68,12 @@ export default function IndexEntity<T>(props: indexEntityProps<T>) {
   return (
     <>
       <h3>{props.title}</h3>
-      <Link to={props.createURL} className="btn btn-primary">
-        Create {props.entityName}
-      </Link>
+      {props.createURL ? (
+        <Link to={props.createURL} className="btn btn-primary">
+          Create {props.entityName}
+        </Link>
+      ) : null}
+
       <RecordsPerPageSelect
         onChange={(amountOfRecords) => {
           setPage(1);
@@ -94,8 +98,8 @@ export default function IndexEntity<T>(props: indexEntityProps<T>) {
 interface indexEntityProps<T> {
   url: string;
   title: string;
-  createURL: string;
-  entityName: string;
+  createURL?: string;
+  entityName?: string;
   children(
     entities: T[],
     buttons: (editUrl: string, id: number) => ReactElement

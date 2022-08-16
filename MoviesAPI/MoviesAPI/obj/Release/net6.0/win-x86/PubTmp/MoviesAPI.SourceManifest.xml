@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Release\net6.0\win-x86\PubTmp\Out\" />
+  <dbfullsql path="D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\obj\Release\net6.0\win-x86\PubTmp\EFSQLScripts\MoviesAPI.ApplicationDbContext.sql" />
+</sitemanifest>

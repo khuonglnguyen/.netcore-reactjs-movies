@@ -7,5 +7,6 @@
     <ActiveDebugProfile>MoviesAPI</ActiveDebugProfile>
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
+    <NameOfLastUsedPublishProfile>D:\Projects\ASP.NET Core - ReactJS\MoviesAPI\MoviesAPI\Properties\PublishProfiles\MoviesAPI20220816111207 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

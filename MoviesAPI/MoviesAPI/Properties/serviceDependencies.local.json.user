@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:41:50.585098Z"
+    },
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:42:02.3061902Z"
+    }
+  },
+  "parameters": {
+    "appInsights1.resourceGroupName": {
+      "Name": "appInsights1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "MoviesAPI20220816111207ResourceGroup"
+    },
+    "appInsights1.subscriptionId": {
+      "Name": "appInsights1.subscriptionId",
+      "Type": "subscription",
+      "Value": "90f818c7-d225-49c3-ab53-b2c1533388ec"
+    }
+  }
+}

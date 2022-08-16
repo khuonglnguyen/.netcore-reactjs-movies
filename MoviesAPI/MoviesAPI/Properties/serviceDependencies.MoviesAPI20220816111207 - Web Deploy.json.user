@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "apis1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:15:38.101319Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:24:43.8904888Z"
+    },
+    "identityapp1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:14:49.1091239Z"
+    },
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2022-08-16T04:15:21.8149849Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "90f818c7-d225-49c3-ab53-b2c1533388ec"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "MoviesAPI20220816111207ResourceGroup"
+    }
+  }
+}

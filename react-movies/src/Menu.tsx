@@ -52,6 +52,11 @@ export default function Menu() {
                       Create a Movie
                     </NavLink>
                   </li>
+                  <li className="nav-item">
+                    <NavLink to="/users" className="nav-link">
+                      Users
+                    </NavLink>
+                  </li>
                 </>
               }
             ></Authorized>
